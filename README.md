@@ -110,6 +110,16 @@ python scripts/capture_screenshots.py --dataset data/netflix.csv
 
 The script saves `dashboard_home.png`, `dataset_analysis.png`, `rating_prediction.png`, `clustering_results.png`, `forecasting_results.png`, `analytics_engine.png`, and `final_insights.png` in `outputs/screenshots/`. It runs the model actions for the corresponding pages, so a representative dataset with ratings, metadata, and catalog-add dates is needed. No screenshots are checked in because no dataset was present when this project was generated.
 
+## Generate report and PowerPoint
+
+After dependencies are installed and a Netflix CSV is available in the project root or `data/`, run:
+
+```powershell
+python scripts/generate_deliverables.py
+```
+
+This computes the EDA, rating-model holdout comparison, content segments, and catalog-add forecasts from the real dataset, then writes `Netflix_Project_Report.pdf` and `Netflix_Project_Presentation.pptx` to the project root. Plotly chart images used by the documents are also saved under `outputs/charts/`.
+
 ## Screenshots and results
 
 Generated screenshots belong in `outputs/screenshots/`. Model scores, cluster assignments, and forecasts are dataset-dependent and are produced by the application after upload; no static metric values are claimed here. The dashboard provides CSV/PDF exports so evaluation results can be retained alongside the screenshots.
