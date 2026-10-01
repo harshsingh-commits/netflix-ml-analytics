@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.venv/
+
+# Local datasets can contain licensed or sensitive information.
+/*.csv
+data/*.csv
+!data/.gitkeep
+
+# Generated artifacts
+outputs/charts/*.png
+outputs/reports/*.pdf
+outputs/models/*.pkl
+outputs/models/*.joblib
+outputs/screenshots/*.png
+!outputs/charts/.gitkeep
+!outputs/reports/.gitkeep
+!outputs/models/.gitkeep
+!outputs/screenshots/.gitkeep
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
